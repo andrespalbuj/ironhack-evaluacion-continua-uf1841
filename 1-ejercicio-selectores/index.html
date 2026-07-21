@@ -11,20 +11,36 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        /* 1. Convierte en mayúsculas el texto del h1 */
+        h1 {
+            text-transform: uppercase;
+        }
+
+        /* 2. Todas las p de color verde */
         p {
-            color: rgb(0,0,255);
+            color: green;
+        }
+
+        /* 3. El segundo chiste de color azul */
+        .mates {
+            color: blue;
+        }
+
+        /* 4. Las p hijas directas del footer con fondo amarillo */
+        footer > p {
+            background-color: yellow;
         }
     </style>
 </head>
 
 <body>
-    <h1>¡Atención! No tocar el HTML. Solo se pueden aplicar reglas CSS entre el tag style </h1>
+    <h1>¡Atención! <strong>No tocar el HTML</strong>. Solo se pueden aplicar reglas CSS entre el tag <em>style</em></h1>
 
     <ol>
+        <li>Convierte en mayúsculas el texto del h1</li>
         <li>Haz que todas las p sean de color verde</li>
         <li>Haz que el segundo chiste tenga la letra de color azul</li>
-        <li>Haz que los las p que son hijas del footer, tengan un color de fondo amarillo</li>
-        <li>Convierte en mayúsculas todos los párrafos pares del documento</li>
+        <li>Haz que los las p que <strong>son hijas del footer</strong>, tengan un color de fondo amarillo</li>
     </ol>
 
     <p>¿Qué le dice una iguana a su hermana gemela? ¡Iguanita!</p>
@@ -36,4 +52,5 @@
         <p>¿Por qué los pájaros no usan Facebook? Porque ya tienen <del>Twitter</del> X.</p>
     </footer>
 </body>
+
 </html>
