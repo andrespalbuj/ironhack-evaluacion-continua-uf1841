@@ -6,14 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chistes Malos</title>
     <style>
-        /** Aquí tus reglas CSS */
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-        p {
-            color: rgb(0,0,255);
-        }
+footer {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* 1. Convertir el h1 a mayúsculas */
+h1 {
+    text-transform: uppercase;
+}
+
+/* 2. Todas las p de color verde */
+p {
+    color: green;
+}
+
+/* 3. El segundo chiste (class="mates") en azul */
+p.mates {
+    color: blue;
+}
+
+/* 4. Solo las p hijas directas del footer con fondo amarillo */
+footer > p {
+    background-color: yellow;
+}
     </style>
 </head>
 
