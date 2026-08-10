@@ -9,33 +9,92 @@
         * {
             box-sizing: border-box;
         }
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .container {
+            border: 1px solid black;
+            width: 200px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .info {
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        .precio {
+            background-color: ligthgray;
+        }
+        .container >p {
+            color: white;
+            padding: 14 px 0;
+        }
+        .container:nth-child(1) > p{
+            background-color: black;
+        }
+        .container:nth-child(2) > p{
+            background-color: #6868ac;
+        }
+        .container:nth-child(3) > p{
+            background-color: black;
+        }
+        .container .info:last-child{
+            background-color: lightgray;
+        }
+        .container .info:last-child a {
+            display: inline-block;
+            background-color: #6868ac;
+            color: white;
+        }
+        .container:hover {
+            box-shadow:  0 8px 12px 0 rgba(0,0,0,0,2);
+        }
     </style>
 </head>
 
 <body>
-    Básico
-    $ 9.99 / año
-    10GB de Almacenamiento
-    10 Correos Electrónicos
-    10 Dominios
-    1GB de Ancho de Banda
-    Registrarse
+    <div class="container">
+
+     <p>Básico</p>
+
+      <div class="info precio"><p>$ 9.99 / año</p></div>
+      <div class="info"><p>10GB de Almacenamiento</p></div>
+      <div class="info"><p>10 Correos Electrónicos</p></div>
+      <div class="info"><p>10 Dominios</p></div>
+      <div class="info"><p>1GB de Ancho de Banda</p></div>
+     <p><a href="Registrarse">Regístrate</a></p>
+
+    </div>
+
+    <div class="container">
     
-    Pro
-    $ 24.99 / año
-    25GB de Almacenamiento
-    25 Correos Electrónicos
-    25 Dominios
-    2GB de Ancho de Banda
-    Registrarse
+     <p>Pro</p>
+
+      <div class="info precio"><p>$ 24.99 / año</p></div>
+      <div class="info"><p>25GB de Almacenamiento</p></div>
+      <div class="info"><p>25 Correos Electrónicos</p></div>
+      <div class="info"><p>25 Dominios</p></div>
+      <div class="info"><p>2GB de Ancho de Banda</p></div>
+     <p><a href="Regístrate">Regístrate</a></p>
+
+    </div>
+
+    <div class="container">
     
-    Premium
-    $ 49.99 / año
-    50GB de Almacenamiento
-    50 Correos Electrónicos
-    50 Dominios
-    5GB de Ancho de Banda
-    Registrarse
+     <p>Premium</p>
+
+      <div class="info precio"><p>$ 49.99 / año</p></div>
+      <div class="info"><p>50GB de Almacenamiento</p></div>
+      <div class="info"><p>50 Correos Electrónicos</p></div>
+      <div class="info"><p>50 Dominios</p></div>
+      <div class="info"><p>5GB de Ancho de Banda</p></div>
+     <p><a href="Regístrate">Regístrate</a></p>
+
+    </div>
 </body>
 
 </html>
